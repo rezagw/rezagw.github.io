@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     color: #654062;
 }
 
@@ -90,6 +90,7 @@ nav ul a:hover {
     transform: rotate(-45deg) translate(-4px, 0);
 }
 
+
 /* hero section */
 
 .hero h1 {
@@ -144,6 +145,11 @@ nav ul a:hover {
 }
 
 
+/* about section */
+.about {
+    margin-top: 150px;
+}
+
 @media screen and (max-width: 768px) {
     nav {
         padding: 0 20px;
@@ -153,7 +159,11 @@ nav ul a:hover {
     }
 }
 
-@media screen and (max-width: 576px) {
+@media only screen and (max-device-width: 576px) and (min-device-width: 331px) {
+    
+    html, html body, body #wrapper {
+    overflow-x: hidden !important;
+    }
     .menu-toggle{
         display: flex;
     }
@@ -188,12 +198,12 @@ nav ul a:hover {
 
     .hero h1 {
         font-weight: 700;
-        font-size: 40px;
+        font-size: 55px;
 
     }
 
     .hero p {
-        font-size: 12px;
+        font-size: 14px;
     }
     
     .hero .frame {
@@ -207,8 +217,9 @@ nav ul a:hover {
     }
 
     .hero .info{
-        height: 120px;
+        height: 150px;
         width: 180px;
+        top: 90px;
         left: 20px;
     }
     
