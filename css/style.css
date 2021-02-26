@@ -335,6 +335,9 @@ footer .mail:hover {
 
 
 @media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
     nav {
         padding: 0 20px;
     }
@@ -344,6 +347,14 @@ footer .mail:hover {
 }
 
 @media screen and (max-width: 576px) {
+    html,
+    body {
+        overflow-x: hidden;
+        height: 100%;
+    }
+    body {
+    position: relative;
+    }
     .menu-toggle{
         display: flex;
         z-index: 1;
