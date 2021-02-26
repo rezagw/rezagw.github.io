@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     color: #654062;
 }
 
@@ -354,24 +354,25 @@ footer .mail:hover {
     nav ul {
         position: absolute;
         flex-direction: column;
-        right: 0;
+        right: -40%;
         top: 0;
-        background-color: #FF9E72;
+        background-color: #ad84aa;
         height: 100vh;
         width: 40%;
         justify-content: space-evenly;
         align-items: center;
         padding-right: 35px;
-        opacity: 0;
+        /* opacity: 0; */
         /* transform: translateX(100%); */
         transition: all .5s;
         z-index: 1;
     }
 
     nav ul.slide {
-        opacity: 1;
+        right: 0;
+        /* opacity: 1; */
     }
-
+    
     /* hero-section */
     .kolom-satu {
         position: absolute;
