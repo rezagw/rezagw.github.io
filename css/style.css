@@ -343,7 +343,7 @@ footer .mail:hover {
     }
 }
 
-@media only screen and (max-device-width: 576px) and (min-device-width: 331px) {
+@media screen and (max-width: 576px) {
     .menu-toggle{
         display: flex;
         z-index: 1;
@@ -421,7 +421,7 @@ footer .mail:hover {
     .about .panel-info img {
         width: 50px;
     }
-    .img-wrapper {
+    .about .img-wrapper {
         width: 100px;
         height: 50px;
         border-radius: 15px;
@@ -494,13 +494,15 @@ footer .mail:hover {
 
     /* section project */
     .project img {
-        width: 385px;
+        width: 375px;
     }
     .project  h2 {
         font-size: 22px;
     }
     .project .project-panel-info{    
-        top: 110px;    
+        align-items: center;
+        top: 110px;   
+        right: 5px; 
         width: 295px;
         height: 140px;
         background-color: white;
@@ -528,6 +530,10 @@ footer .mail:hover {
     #customers-testimonials.owl-carousel .owl-dots{
         margin-top: -50px;
     }
+
+    /* whyme section */
+
+    
 
 
     /* footer section */
