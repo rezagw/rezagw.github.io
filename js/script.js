@@ -1,53 +1,8 @@
-// event pada saat link di klik
-$('.page-scroll').on('click', function(e){
+const menuToggle = document.querySelector(".menu-toggle input");
+const nav = document.querySelector("nav ul");
 
-    // ambil isi href
-    var tujuan = $(this).attr('href');
-
-    var elemenTujuan = $(tujuan);
-
-    $('html , body').animate({
-        scrollTop: elemenTujuan.offset().top -50
-    }, 800, 'swing');
-
-    e.preventDefault();
-
-});
-
-// paralax
-// efek di jumbotron
-$(window).scroll(function () {
-    var wScroll = $(this).scrollTop();
-
-    // jumbotron
-    $('.jumbotron img').css({
-        'transform' : 'translate(0px, '+ wScroll/3 +'%)'
-    })
-
-    $('.jumbotron h1').css({
-        'transform' : 'translate(0px, '+ wScroll/2 +'%)'
-    })
-
-    $('.jumbotron p').css({
-        'transform' : 'translate(0px, '+ wScroll/2 +'%)'
-    })
-
-    // about muncul
-    if(wScroll > $('.about').offset().top - 200) {
-        $('.pkiri').addClass('pmuncul');
-        $('.pkanan').addClass('pmuncul');
-    }
-
-    // portfolio
-    if (wScroll > $('.portfolio').offset().top - 150) {
-        $('.portfolio .card').each(function(i) {
-            setTimeout(function() {
-                $('.portfolio .card').eq(i).addClass('tampil');
-            }, 500 * (i+1));
-        });
-       
-        // $('.portfolio .img-thumbnail').addClass('tampil');
-    }
+menuToggle.addEventListener("click", function () {
+  nav.classList.toggle("slide");
 });
 
 const testi = document.querySelector(".testi");
