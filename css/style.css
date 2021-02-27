@@ -334,7 +334,7 @@ footer .mail:hover {
 
 
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     body {
         overflow-x: hidden;
     }
@@ -346,7 +346,7 @@ footer .mail:hover {
     }
 }
 
-@media (min-width: 384px) and (max-width: 767.98px) {
+@media (max-width: 576px) {
     html,
     body {
         overflow-x: hidden;
@@ -373,6 +373,242 @@ footer .mail:hover {
         right: -40%;
         top: 0;
         background-color: #FF9E72;
+        height: 100vh;
+        width: 40%;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-right: 35px;
+        /* opacity: 0; */
+        /* transform: translateX(100%); */
+        transition: all .5s;
+        z-index: 1;
+    }
+
+    nav ul.slide {
+        right: 0;
+        /* opacity: 1; */
+    }
+    
+    /* hero-section */
+    .hero-column {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /* .hero-right {
+        position: relative;
+        min-height: 484px;
+    } */
+
+
+
+    .kolom-satu {
+        position: absolute;
+        top: 410px;
+    }
+
+    .hero h1 {
+        font-weight: 700;
+        font-size: 55px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+    
+    .hero .frame {
+        width: 315px;
+        height: 351px;
+        left: 80px;
+    }
+    .hero .img-hero {
+        width: 359px;
+        height: 394px;
+        left: 10px;
+    }
+
+    .hero .info{
+        padding-top: 5px;
+        height: 120px;
+        width: 150px;
+        top: 120px;
+        left: 5px;
+    }
+
+
+
+    /* about section */
+
+    .about {
+        margin-top: 1000px;
+    }
+    
+    .about p {
+        font-size: 14px;
+    }
+
+    .about .panel-info img {
+        width: 50px;
+    }
+    .about .img-wrapper {
+        width: 100px;
+        height: 50px;
+        border-radius: 15px;
+    }
+    .ui-ux {
+        background-color: #FFD66B;
+        margin-bottom: 50px;
+    }
+    .ui-ux img {
+        width: 70px;
+        left: 220px;
+        margin-top: 10px;
+    }
+    .ui-ux p {
+        font-size: 10px;
+        padding-top: 30px !important;
+    }
+    .dev {
+        background-color: #654062;
+        margin-bottom: 50px;
+    }
+    .dev img {
+        width: 70px;
+        left: 220px;
+        margin-top: 10px;
+    }
+    .dev p {
+        font-size: 10px;
+        padding-top: 30px !important;
+    }
+    .freelance {
+        background-color: #FF9E72;
+        margin-bottom: 50px;
+    }
+    .freelance img {
+        width: 70px;
+        left: 220px;
+        margin-top: 10px;
+    }
+    .freelance p {
+        font-size: 10px;
+        padding-top: 30px !important;
+    }
+    
+    .about h2 {
+        font-size: 40px;
+        font-weight: 700;
+    }
+    
+    .about span {
+        color: #FF9E72;
+    }
+
+    .about .skills span {
+        font-size: 12px;
+        margin-left: -5px;
+        margin-right: -10px;
+    }
+
+    .about .banner {
+        text-align: center;
+    }
+    .about .banner img {
+        margin-top: 40px;
+        width: 280px;
+        float: none !important;
+    }
+
+
+
+    /* section project */
+    .project img {
+        width: 375px;
+    }
+    .project  h2 {
+        font-size: 22px;
+    }
+    .project .project-panel-info{    
+        align-items: center;
+        top: 110px;   
+        right: 5px; 
+        width: 295px;
+        height: 140px;
+        background-color: white;
+        box-shadow: -5px 5px 25px -4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        bottom: 55px;
+    }
+    
+    .project-panel-info p {
+        font-size: 10px;
+    }
+
+    .project-panel-info h1 {
+        font-size: 22px;
+        color: #FF9E72;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+
+
+    /* testi section */
+    .testimonials {
+        margin-top: 0px;
+    }
+    #customers-testimonials.owl-carousel .owl-dots{
+        margin-top: -50px;
+    }
+
+    /* whyme section */
+
+    
+
+
+    /* footer section */
+    footer .container h2 {    
+        font-size: 32px;
+        font-weight: 700;
+        color: #FF9E72;
+    }
+    
+    footer .container p {
+        font-weight: normal;
+        font-size: 14px;
+    }
+
+    footer .container i {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    html,
+    body {
+        overflow-x: hidden;
+        height: 100%;
+    }
+    body {
+    position: relative;
+    }
+
+    /* .nav-mobile{
+
+    } */
+
+    .menu-toggle{
+        display: flex;
+        z-index: 1;
+    }
+    nav {
+        padding: 0 10px;
+    }
+    nav ul {
+        position: absolute;
+        flex-direction: column;
+        right: -40%;
+        top: 0;
+        background-color: #ad84aa;
         height: 100vh;
         width: 40%;
         justify-content: space-evenly;

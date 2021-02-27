@@ -1,3 +1,7 @@
+AOS.init({
+  duration: 1200,
+});
+
 const menuToggle = document.querySelector(".menu-toggle input");
 const nav = document.querySelector("nav ul");
 
