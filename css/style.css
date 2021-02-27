@@ -334,7 +334,7 @@ footer .mail:hover {
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
     body {
         overflow-x: hidden;
     }
@@ -346,7 +346,7 @@ footer .mail:hover {
     }
 }
 
-@media screen and (max-width: 576px) {
+@media (min-width: 384px) and (max-width: 767.98px) {
     html,
     body {
         overflow-x: hidden;
@@ -355,6 +355,11 @@ footer .mail:hover {
     body {
     position: relative;
     }
+
+    /* .nav-mobile{
+
+    } */
+
     .menu-toggle{
         display: flex;
         z-index: 1;
@@ -367,7 +372,7 @@ footer .mail:hover {
         flex-direction: column;
         right: -40%;
         top: 0;
-        background-color: #ad84aa;
+        background-color: #FF9E72;
         height: 100vh;
         width: 40%;
         justify-content: space-evenly;
@@ -385,6 +390,18 @@ footer .mail:hover {
     }
     
     /* hero-section */
+    .hero-column {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /* .hero-right {
+        position: relative;
+        min-height: 484px;
+    } */
+
+
+
     .kolom-satu {
         position: absolute;
         top: 410px;
