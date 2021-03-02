@@ -4,13 +4,14 @@ AOS.init({
 
 const menuToggle = document.querySelector(".menu-toggle input");
 const nav = document.querySelector("nav ul");
+const checkBox = document.getElementById("myCheck");
 
 const navLink = document.querySelectorAll("a");
 
 for (let i = 0; i < 3; i++) {
   navLink[i].addEventListener("click", function () {
     nav.classList.toggle("slide");
-    console.log(navLink[i]);
+    checkBox.checked = false;
   });
 }
 
