@@ -26,13 +26,15 @@ $(".page-scroll").on("click", function (e) {
 
   let elementDir = $(dir);
 
-  $("html, body").animate(
-    {
-      scrollTop: elementDir.offset().top - 50,
-    },
-    800,
-    "swing"
-  );
+  setTimeout(() => {
+    $("html, body").animate(
+      {
+        scrollTop: elementDir.offset().top - 50,
+      },
+      800,
+      "swing"
+    );
+  }, 200);
 
   e.preventDefault();
 });
