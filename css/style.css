@@ -334,7 +334,7 @@ footer .mail:hover {
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
     body {
         overflow-x: hidden;
     }
@@ -344,6 +344,74 @@ footer .mail:hover {
     nav ul {
         width: 40%;
     }
+
+    /* section hero */
+    .hero .frame {
+        top: 0;
+        left: 40px;
+        width: 325px;
+    }
+    
+    .hero .img-hero {
+        top: 25px;
+        left: 0;
+        margin-left: -20px;
+    }
+
+    .hero .info{
+        width: 200px;
+        top: 180px;
+        left: 0;
+        margin-left: -40px;
+    }
+
+
+
+    /* section about */
+    .about .banner {
+        text-align: center;
+    }
+    .about .banner img {
+        margin-top: 40px;
+        width: 280px;
+        float: none !important;
+    }
+    .about .skills span {
+        font-size: 12px;
+        margin-left: -5px;
+        margin-right: -10px;
+    }
+
+    /* section projects */
+    .project img {
+        width: 100%;
+    }
+    .project  h2 {
+        font-size: 22px;
+    }
+    .project .project-panel-info{    
+        align-items: center;
+        top: 230px;   
+        right: 5px; 
+        width: 325px;
+        height: 170px;
+        background-color: white;
+        box-shadow: -5px 5px 25px -4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        bottom: 55px;
+    }
+    
+    .project-panel-info p {
+        font-size: 12px;
+    }
+
+    .project-panel-info h1 {
+        font-size: 24px;
+        color: #FF9E72;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+
 }
 
 @media (max-width: 576px) {
