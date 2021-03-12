@@ -432,13 +432,13 @@ footer .mail:hover {
     }
     nav {
         padding: 0 10px;
-        position: fixed;
-        z-index: 99999;
-        bottom: 0;
-        background-color: #fff;
-        border-top: 1px solid #d3d3d3 ;
-        transition: all .3s;
-        overflow: hidden;
+        /* position: fixed; */
+        /* z-index: 99999; */
+        /* bottom: 0; */
+        /* background-color: #fff; */
+        /* border-top: 1px solid #d3d3d3 ; */
+        /* transition: all .3s;
+        overflow: hidden; */
     }
     nav img {
         margin-right: 300px;
