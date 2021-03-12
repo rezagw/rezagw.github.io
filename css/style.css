@@ -432,6 +432,17 @@ footer .mail:hover {
     }
     nav {
         padding: 0 10px;
+        position: fixed;
+        z-index: 99999;
+        bottom: 0;
+        background-color: #fff;
+        border-top: 1px solid #d3d3d3 ;
+        transition: all .3s;
+        overflow: hidden;
+    }
+    nav img {
+        margin-right: 300px;
+
     }
     nav ul {
         position: absolute;
@@ -449,6 +460,7 @@ footer .mail:hover {
         transition: all .3s;
         z-index: 1;
     }
+
 
     nav ul.slide {
         right: 0;
@@ -639,6 +651,9 @@ footer .mail:hover {
 
 
     /* footer section */
+    footer {
+        margin-bottom: 70px;
+    }
     footer .container h2 {    
         font-size: 32px;
         font-weight: 700;
